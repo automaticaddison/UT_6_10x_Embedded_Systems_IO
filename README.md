@@ -19,8 +19,6 @@ Some labs required constructing a physical electrical circuit.
 
 ## Common Files
 There are some file types that appear in every lab asssignment.  
-
-
 `***.uvproj` `***.uvgui` `***.uvopt` - uVision files (open `***.uvproj` to get everthing)  
 `***.axf` `TExaS.h` `texas.o` - autograder files   
 `tm4c123gh6pm.h` - useful address definitions for launchpad  
