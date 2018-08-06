@@ -3,7 +3,7 @@ This is a repository for all the lab assignments I've completed during UT.6.10x 
 
 ## MOOC Details
 __Site:__ [edX](https://www.edx.org/course/embedded-systems-shape-the-world-microcontroller-inputoutput)  
-__Date:__ August - September 2018
+__Date:__ August - September 2018<br />
 __School:__ University of Texas at Austin  
 
 ## Certificate
@@ -25,8 +25,8 @@ There are some file types that appear in every lab asssignment.
 `startup.s` - startup file  
 
 ## Requirements
-[__Kiel uVsion 4__](https://www.keil.com/demo/eval/armv4.htm) - Coding exercises were completed using this IDE
-[__Tiva LaunchPad__](http://www.ti.com/tool/EK-TM4C123GXL) - Texas Instruments TM4C123 microcontroller kit that has an ARM Cortex-M4 processor. 
+[__Kiel uVsion 4__](https://www.keil.com/demo/eval/armv4.htm) - Coding exercises were completed using this IDE<br />
+[__Tiva LaunchPad__](http://www.ti.com/tool/EK-TM4C123GXL) - Texas Instruments TM4C123 microcontroller kit that has an ARM Cortex-M4 processor.<br /> 
 [__Electronic Components__](http://edx-org-utaustinx.s3.amazonaws.com/UT601x/worldwide.html) - The physical circuit requires a few miscellaneous electrical components.  
 
 ## Other Resources
