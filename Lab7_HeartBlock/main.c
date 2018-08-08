@@ -166,11 +166,11 @@ void Delay1ms(unsigned long msec){
 // write this function
 	unsigned long i;
 	while(msec > 0){
-		// i = 16000; // this number means 1 millisecond
+		// i = 16000; // this number means 1 millisecond. number of counts to delay 1ms at 80MHz
 		i = (16000*25/30); // wait time on board != wait time on simualator, so we adjust
 		while (i > 0) {
 			i = i - 1;
-		}
+		} // This while loop takes approximately 3 cycles
 		msec = msec - 1;
 	}
 }
