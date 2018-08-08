@@ -45,19 +45,19 @@ int main(void){
   TExaS_Init(SW_PIN_PF4, LED_PIN_PF2);  // activate grader and set system clock to 80 MHz
   
 	// Initialization code. Written by Addison Sears-Collins
-	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;     // 1) Turn on the clock for Port F
-	delay = SYSCTL_RCGC2_R;           				// 2) Allow time for the clock to start
-	GPIO_PORTF_AMSEL_R &= ~0x14;     			 		// 3) Clear the PF4 and PF2 bits in Port F AMSEL to disable analog. 
-																								// We need a 0 in bits 2 and bits 4 of Port F. 1 is needed everywhere else
-																								// Note that the ~ bit operator inverts all the bits
-	GPIO_PORTF_PCTL_R &= ~0x14;								// 4) Clear the PF4 and PF2 bit fields in Port F PCTL to configure as GPIO
-	GPIO_PORTF_DIR_R |= 0x4;          				// 5) Set the Port F direction register so (0 = input; 1 = output)
-																								// PF4 is an input and 
-																								// PF2 is an output
-	GPIO_PORTF_AFSEL_R &= ~0x14;							// 6) Clear the PF4 and PF2 bits in Port F AFSEL to disable alternate functions
-	GPIO_PORTF_DEN_R |= 0x14;									// 7) Set the PF4 and PF2 bits in Port F DEN to enable digital
-	GPIO_PORTF_PUR_R |= 0x10;									// 8) Set the PF4 bit in Port F PUR to activate an internal pullup resistor
-	GPIO_PORTF_DATA_R |= 0x4;									// 9) Set the PF2 bit in Port F DATA so the LED is initially ON
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;   // 1) Turn on the clock for Port F
+	delay = SYSCTL_RCGC2_R;           	// 2) Allow time for the clock to start
+	GPIO_PORTF_AMSEL_R &= ~0x14;     	// 3) Clear the PF4 and PF2 bits in Port F AMSEL to disable analog. 
+							// We need a 0 in bits 2 and bits 4 of Port F. 1 is needed everywhere else
+							// Note that the ~ bit operator inverts all the bits
+	GPIO_PORTF_PCTL_R &= ~0x14;		// 4) Clear the PF4 and PF2 bit fields in Port F PCTL to configure as GPIO
+	GPIO_PORTF_DIR_R |= 0x4;          	// 5) Set the Port F direction register so (0 = input; 1 = output)
+							// PF4 is an input and 
+							// PF2 is an output
+	GPIO_PORTF_AFSEL_R &= ~0x14;		// 6) Clear the PF4 and PF2 bits in Port F AFSEL to disable alternate functions
+	GPIO_PORTF_DEN_R |= 0x14;		// 7) Set the PF4 and PF2 bits in Port F DEN to enable digital
+	GPIO_PORTF_PUR_R |= 0x10;		// 8) Set the PF4 bit in Port F PUR to activate an internal pullup resistor
+	GPIO_PORTF_DATA_R |= 0x4;		// 9) Set the PF2 bit in Port F DATA so the LED is initially ON
 
 	output_pf2 = GPIO_PORTF_DATA_R;
 	
@@ -65,17 +65,17 @@ int main(void){
 	
   while(1){
     // loop body goes here. Written by Addison Sears-Collins
-		Delay100ms(1);													// 1) Delay about 100 ms
-																						// 2) Read the switch and test if the switch is pressed
-		if (!(GPIO_PORTF_DATA_R & 0x10)) {						// If PF4=0 (the switch is pressed),
-			output_pf2 ^= 0x4;								 								// toggle PF2 (flip bit two on Port F from 0 to 1, or from 1 to 0)
-			GPIO_PORTF_DATA_R &= ~0x4;												// Clear PF2
-		  GPIO_PORTF_DATA_R |= output_pf2;									// Set PF2 to the new value (either a 0 if 1 before, or 1 if 0 before)
+		Delay100ms(1);				// 1) Delay about 100 ms
+							// 2) Read the switch and test if the switch is pressed
+		if (!(GPIO_PORTF_DATA_R & 0x10)) {	// If PF4=0 (the switch is pressed),
+			output_pf2 ^= 0x4;			// toggle PF2 (flip bit two on Port F from 0 to 1, or from 1 to 0)
+			GPIO_PORTF_DATA_R &= ~0x4;		// Clear PF2
+		  GPIO_PORTF_DATA_R |= output_pf2;		// Set PF2 to the new value (either a 0 if 1 before, or 1 if 0 before)
 		}
-		else {																				// Else PF4=1 (the switch is not pressed), 
-			GPIO_PORTF_DATA_R |= 0x4;													// set PF2, so LED is ON
+		else {					// Else PF4=1 (the switch is not pressed), 
+			GPIO_PORTF_DATA_R |= 0x4;		// set PF2, so LED is ON
 		}																							
-	}																					// 3) Go to loop  
+	}						// 3) Go to loop  
 }
 
 void Delay100ms(unsigned long time){
@@ -86,6 +86,6 @@ void Delay100ms(unsigned long time){
       i = i - 1;
     }
     time = time - 1; 				// decrements every 100 ms. Having time == 1 as an input parameter 
-														// makes sure this loop executes only once
+						// makes sure this loop executes only once
   }
 }
