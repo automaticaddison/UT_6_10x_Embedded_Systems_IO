@@ -42,7 +42,7 @@ int main(void){
 	unsigned long volatile delay;
 	unsigned long output_pf2;	
 	
-  TExaS_Init(SW_PIN_PF4, LED_PIN_PF2);  // activate grader and set system clock to 80 MHz
+  	TExaS_Init(SW_PIN_PF4, LED_PIN_PF2);  // activate grader and set system clock to 80 MHz
   
 	// Initialization code. Written by Addison Sears-Collins
 	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;   // 1) Turn on the clock for Port F
