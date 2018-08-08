@@ -48,7 +48,7 @@ int main(void){
 	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;   // 1) Turn on the clock for Port F
 	delay = SYSCTL_RCGC2_R;           	// 2) Allow time for the clock to start
 	GPIO_PORTF_AMSEL_R &= ~0x14;     	// 3) Clear the PF4 and PF2 bits in Port F AMSEL to disable analog. 
-							// We need a 0 in bits 2 and bits 4 of Port F. 1 is needed everywhere else
+							// We need a 0 in bits 2 and bits 4 of Port F.
 							// Note that the ~ bit operator inverts all the bits
 	GPIO_PORTF_PCTL_R &= ~0x14;		// 4) Clear the PF4 and PF2 bit fields in Port F PCTL to configure as GPIO
 	GPIO_PORTF_DIR_R |= 0x4;          	// 5) Set the Port F direction register so (0 = input; 1 = output)
