@@ -1,15 +1,15 @@
 # Lab7_HeartBlock
-[E-book link](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C7_DesignDevelopment.htm)
-[YouTube Video by Professor Valvano Describing Heart Blocks] (https://www.youtube.com/watch?time_continue=66&v=zYbQNvtkjJo)
-[YouTube Video of Professor Valvano Describing Lab 7 Requirements] (https://www.youtube.com/watch?v=QaFlnBglmbA)
-[Heart Block Definition] (https://www.hrsonline.org/Patient-Resources/Heart-Diseases-Disorders/Heart-Block)
+[E-book link](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C7_DesignDevelopment.htm)<br/>
+[YouTube Video by Professor Valvano Describing Heart Blocks] (https://www.youtube.com/watch?time_continue=66&v=zYbQNvtkjJo)<br/>
+[YouTube Video of Professor Valvano Describing Lab 7 Requirements] (https://www.youtube.com/watch?v=QaFlnBglmbA)<br/>
+[Heart Block Definition] (https://www.hrsonline.org/Patient-Resources/Heart-Diseases-Disorders/Heart-Block)<br/>
 
 ## Purpose
 The purpose of this lab is to construct a simple pacemaker to treat patients that have complete heart block.<br/>
 The goal is to recreate the normal 1) atrial contraction, 2) pause, 3) ventricular contraction sequence <br/>
 that occurs in a normal, single cardiac cycle. In heart block, the electrical signals that normally pass <br/>
 from the atria to the ventricles are delayed, partially blocked, or completely blocked, causing the atria and <br/>
-ventricles to beat out of synch. <br>/
+ventricles to beat out of synch. <br/>
 
 Skills gained in this lab include the following:
 * Read from a switch, make decisions, and output to an LED. 
