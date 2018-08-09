@@ -1,7 +1,7 @@
 # Lab8_SwitchLEDinterface
-[E-book link](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C8_SwitchLED.htm)
-[YouTube Video by Professor Valvano Describing Lab 8] (https://www.youtube.com/watch?v=bS73Z-WGZz8)
-[How to Use the Logic Analyzer] (https://www.youtube.com/watch?v=mtsOrzoECbk)
+[E-book link](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C8_SwitchLED.htm) <br/>
+[YouTube Video by Professor Valvano Describing Lab 8] (https://www.youtube.com/watch?v=bS73Z-WGZz8) <br/>
+[How to Use the Logic Analyzer] (https://www.youtube.com/watch?v=mtsOrzoECbk) <br/>
 ## Purpose
 Build circuits on the breadboard and connect them to the LaunchPad. Learn how to interface a switch <br/> 
 and an LED. Perform explicit measurements on the circuits in order to verify they are operational and to <br/> 
