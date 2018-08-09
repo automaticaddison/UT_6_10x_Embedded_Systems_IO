@@ -7,8 +7,7 @@ __Date:__ August - September 2018<br />
 __School:__ University of Texas at Austin  
 
 ## Certificate
-* [Certificate](https://www.edx.org/course/embedded-systems-shape-the-world-microcontroller-inputoutput)
-* [Certifcate Verification](https://www.edx.org/course/embedded-systems-shape-the-world-microcontroller-inputoutput)
+* [Certificate](https://courses.edx.org/certificates/9651ca988f4c4c9aa71f042c2f2ceaec)
 * [My Final Project - XXXX](https://github.com/automaticaddison)
 * Grade: XXX% _(not shown in certificate)_
 
