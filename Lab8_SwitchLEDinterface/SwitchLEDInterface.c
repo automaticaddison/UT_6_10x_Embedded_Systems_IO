@@ -42,14 +42,14 @@ int main(void){
 	SYSCTL_RCGC2_R |= 0x00000010;   // 1) Turn on the clock for Port E
 	delay = SYSCTL_RCGC2_R;         // 2) Allow time for the clock to start
 	GPIO_PORTE_AMSEL_R &= ~0x03;    // 3) Clear the PE0 and PE1 bits in Port E AMSEL to disable analog. 
-	GPIO_PORTE_PCTL_R &= ~0x03;		  // 4) Clear the PE0 and PE1 bit fields in Port E PCTL to configure as GPIO
+	GPIO_PORTE_PCTL_R &= ~0x03;     // 4) Clear the PE0 and PE1 bit fields in Port E PCTL to configure as GPIO
 	GPIO_PORTE_DIR_R |= 0x02;       // 5) Set the Port E direction register so (0 = input; 1 = output)
 							                          // PE0 is an input and 
 							                          // PE1 is an output
-	GPIO_PORTE_AFSEL_R &= ~0x03;		// 6) Clear the PE0 and PE1 bits in Port E AFSEL to disable alternate functions
-	GPIO_PORTE_DEN_R |= 0x03;		    // 7) Set the PE0 and PE1 bits in Port E DEN to enable digital
-	GPIO_PORTE_PUR_R &= ~0x01;		  // 8) Clear the PE0 bit in Port E PUR to deactivate an internal pullup resistor
-	GPIO_PORTE_DATA_R |= 0x02;	    // 9) Set the PE1 bit in Port E DATA so the LED is initially ON
+	GPIO_PORTE_AFSEL_R &= ~0x03;    // 6) Clear the PE0 and PE1 bits in Port E AFSEL to disable alternate functions
+	GPIO_PORTE_DEN_R |= 0x03;       // 7) Set the PE0 and PE1 bits in Port E DEN to enable digital
+	GPIO_PORTE_PUR_R &= ~0x01;      // 8) Clear the PE0 bit in Port E PUR to deactivate an internal pullup resistor
+	GPIO_PORTE_DATA_R |= 0x02;      // 9) Set the PE1 bit in Port E DATA so the LED is initially ON
 
 	output_pe1 = GPIO_PORTE_DATA_R;
 		
