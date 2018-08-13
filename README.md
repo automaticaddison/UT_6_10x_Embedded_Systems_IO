@@ -31,7 +31,7 @@ There are some file types that appear in every lab asssignment.
 ## Other Resources
 [__e-Book__](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/) - e-Book is basically a transcript of the entire course
 
-## Photo of My Lab
+## Photo of My Final Project (Traffic Light)
 ![lab_8a](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(1).jpg)
 ![lab_8b](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(2).jpg)
 ![lab_8c](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(3).jpg)
