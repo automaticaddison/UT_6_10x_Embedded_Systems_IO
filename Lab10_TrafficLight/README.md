@@ -3,6 +3,11 @@
 [YouTube Video describing finite state machine for a traffic light] (https://www.youtube.com/watch?time_continue=894&v=kgABPjf9qLI) <br/> 
 [Professor explaining the final solution] (https://www.youtube.com/watch?time_continue=1&v=qNl7vayZEz0)
 
+## Photo of My Lab
+![lab_8a](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(1).jpg)
+![lab_8b](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(2).jpg)
+![lab_8c](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab10_TrafficLight/traffic_light_lab10%20(3).jpg)
+
 ## Purpose
 This lab has these major objectives:  <br/> 
 1. the understanding and implementing of indexed data structures
