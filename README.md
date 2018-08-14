@@ -9,7 +9,6 @@ __School:__ University of Texas at Austin
 ## Certificate
 * [Certificate](https://courses.edx.org/certificates/9651ca988f4c4c9aa71f042c2f2ceaec)
 * [My Final Project - XXXX](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/tree/master/Lab10_TrafficLight)
-* Grade: 99% _(not shown in certificate)_
 
 
 ## Description
