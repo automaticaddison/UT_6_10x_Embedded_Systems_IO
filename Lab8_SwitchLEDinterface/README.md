@@ -2,6 +2,7 @@
 [E-book link](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C8_SwitchLED.htm) <br/>
 [YouTube Video by Professor Valvano Describing Lab 8] (https://www.youtube.com/watch?v=bS73Z-WGZz8) <br/>
 [How to Use the Logic Analyzer] (https://www.youtube.com/watch?v=mtsOrzoECbk) <br/>
+[Video of Me Doing the Lab] (https://youtu.be/nyxZdPtJdIE)
 
 ## Photo of My Lab
 ![lab_8](https://github.com/automaticaddison/UT_6_10x_Embedded_Systems_IO/blob/master/Lab8_SwitchLEDinterface/photo_of_my_lab_8.jpg)
